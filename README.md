@@ -1,13 +1,13 @@
 # DevOps
 ## Huomio
-Harjoitukset on suunniteltu toimimaan Windows 10 ympäristössä, yhdellä virtuaalikoneella.
+Harjoitukset on suunniteltu toimimaan Windows 10 ympäristössä, yhdellä virtuaalikoneella.__
 
 # Harjoitus 1 - Versionhallinta
 ## Esivalmistelut
-Liity GitHubiin: (https://github.com/join)
-Lataa Visual Studio Code: (https://code.visualstudio.com/)
-Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
-Lataa Git paketti: (https://git-scm.com/download/win)
+Liity GitHubiin: (https://github.com/join)__
+Lataa Visual Studio Code: (https://code.visualstudio.com/)__
+Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)__
+Lataa Git paketti: (https://git-scm.com/download/win)__
 
 ## Versionhallinta harjoitus
 ### Repositoryn hallinta
@@ -46,7 +46,8 @@ Lataa Git paketti: (https://git-scm.com/download/win)
 
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
-Lataa Jenkins: (https://jenkins.io/download/)
+Lataa Jenkins: (https://jenkins.io/download/)__
+
 ## Jenkins
 1. Asenna Jenkins
 2. Avaa sivusto (http://localhost:8080), avaa tiedosto "C:\Program Files(x86)\Jenkins\secrets\initialAdminPassword", kirjaudu sisään ja luo uusi käyttäjätunnus.
@@ -56,6 +57,7 @@ Lataa Jenkins: (https://jenkins.io/download/)
 6. Määrittele Slack plugin: (https://wiki.jenkins.io/display/JENKINS/Slack+Plugin)
 7. Luo uusi demo pipeline: (http://localhost:8080/job/Demo/pipeline-syntax/) (https://jenkins.io/doc/book/pipeline/)
 8. Testaa ensin esimerkki Pipelinessä. Siirrä testin jälkeen GitHubiin ja testaa pipelinen määrittämistä SVC:n yli
+
 ## GitHub Hooks
 1. Määritä Pipelinen Build trigger
 2. Määrittele GitHubissa Settings -> Webhooks -> Add webhook
@@ -63,11 +65,11 @@ Lataa Jenkins: (https://jenkins.io/download/)
 
 # Harjoitus 3 - Kontainerit ja testausympäristöt
 ## Esivalmistelut
-Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
-Lataa Vagrant: (https://www.vagrantup.com/downloads.html)
+Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)__
+Lataa Vagrant: (https://www.vagrantup.com/downloads.html)__
 
 ### Vagrant käyttö
-Vagrant imaget: (https://app.vagrantup.com/boxes/search)
+Vagrant imaget: (https://app.vagrantup.com/boxes/search)__
 
 1. Lataa Vagrant levykuva '''vagrant box add ubuntu/xenial64'''
 2. Avaa työkansio '''cd XXX'''
@@ -78,21 +80,21 @@ Vagrant imaget: (https://app.vagrantup.com/boxes/search)
 
 ### Vagrant asetukset
 
-Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)
-Bootsrap scripti: https://www.vagrantup.com/docs/provisioning/file.html
-Hostname: https://www.vagrantup.com/docs/vagrantfile/machine_settings.html
+Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)__
+Bootsrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)__
+Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)__
 
 1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootsrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
 
 ### Docker esimerkki
-Docker: (https://docs.docker.com/install/)
+Docker: (https://docs.docker.com/install/)__
 
 1. Asenna Docker Vagranttiin
 2. Suorita Hello World
 3. 
 
 ### Esimerkki Wordpress microservice
-Lataa Docker Compose: (https://docs.docker.com/compose/install/)
+Lataa Docker Compose: (https://docs.docker.com/compose/install/)__
 
 1. Luo bootsrap file joka asentaa Docker-CE:n ja Docker Composen.
 (https://docs.docker.com/compose/wordpress/)
