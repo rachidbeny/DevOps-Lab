@@ -1,1 +1,1 @@
-vagrant box add hashicorp/precise64
+vagrant box add ubuntu/xenial64
