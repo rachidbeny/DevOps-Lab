@@ -26,15 +26,15 @@ Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
 6. Yhdistä muutokset
 ### Branchien yhdistäminen, konfliktien ratkaiseminen
 1. Luo uusi branch: Feature-1
-2. Muuta README.md tiedostoa
+2. Muuta README.md tiedostoa, muuta README.md tiedostoa development branchissa
 3. Varmista muutokset GitHub Desktopista
 4. Committaa muutokset
 5. Pushaa paikallinen repository, keskitettyyn repositoryyn
 6. Varmista että muutokset siirtyivät GitHubiin
 7. GitHubissa valitse välilehti Pull requests
 8. New pull request
-9. Base: master
-10. Compare: development
+9. Base: development
+10. Compare: feature-1
 11. Tarkastele muutokset ja valitse Create new pull request
 12. Yhdistä muutokset
 
