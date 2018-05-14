@@ -1,13 +1,16 @@
 # DevOps
 ## Huomio
-Harjoitukset on suunniteltu toimimaan Windows 10 ympäristössä, yhdellä virtuaalikoneella.__
+Harjoitukset on suunniteltu toimimaan Windows 10 ympäristössä, yhdellä virtuaalikoneella.
 
 # Harjoitus 1 - Versionhallinta
 ## Esivalmistelut
-Liity GitHubiin: (https://github.com/join)__
-Lataa Visual Studio Code: (https://code.visualstudio.com/)__
-Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)__
-Lataa Git paketti: (https://git-scm.com/download/win)__
+Liity GitHubiin: (https://github.com/join)
+
+Lataa Visual Studio Code: (https://code.visualstudio.com/)
+
+Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
+
+Lataa Git paketti: (https://git-scm.com/download/win)
 
 ## Versionhallinta harjoitus
 ### Repositoryn hallinta
@@ -46,7 +49,7 @@ Lataa Git paketti: (https://git-scm.com/download/win)__
 
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
-Lataa Jenkins: (https://jenkins.io/download/)__
+Lataa Jenkins: (https://jenkins.io/download/)
 
 ## Jenkins
 1. Asenna Jenkins
@@ -65,11 +68,12 @@ Lataa Jenkins: (https://jenkins.io/download/)__
 
 # Harjoitus 3 - Kontainerit ja testausympäristöt
 ## Esivalmistelut
-Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)__
-Lataa Vagrant: (https://www.vagrantup.com/downloads.html)__
+Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
+
+Lataa Vagrant: (https://www.vagrantup.com/downloads.html)
 
 ### Vagrant käyttö
-Vagrant imaget: (https://app.vagrantup.com/boxes/search)__
+Vagrant imaget: (https://app.vagrantup.com/boxes/search)
 
 1. Lataa Vagrant levykuva '''vagrant box add ubuntu/xenial64'''
 2. Avaa työkansio '''cd XXX'''
@@ -80,21 +84,23 @@ Vagrant imaget: (https://app.vagrantup.com/boxes/search)__
 
 ### Vagrant asetukset
 
-Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)__
-Bootsrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)__
-Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)__
+Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)
+
+Bootsrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)
+
+Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
 1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootsrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
 
 ### Docker esimerkki
-Docker: (https://docs.docker.com/install/)__
+Docker: (https://docs.docker.com/install/)
 
 1. Asenna Docker Vagranttiin
 2. Suorita Hello World
 3. 
 
 ### Esimerkki Wordpress microservice
-Lataa Docker Compose: (https://docs.docker.com/compose/install/)__
+Lataa Docker Compose: (https://docs.docker.com/compose/install/)
 
 1. Luo bootsrap file joka asentaa Docker-CE:n ja Docker Composen.
 (https://docs.docker.com/compose/wordpress/)
