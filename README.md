@@ -87,8 +87,15 @@ Hostname: https://www.vagrantup.com/docs/vagrantfile/machine_settings.html
 ### Docker esimerkki
 Docker: (https://docs.docker.com/install/)
 
+1. Asenna Docker Vagranttiin
+2. Suorita Hello World
+3. 
+
 ### Esimerkki Wordpress microservice
-Lataa Docker Compose: https://docs.docker.com/compose/install/
+Lataa Docker Compose: (https://docs.docker.com/compose/install/)
+
+1. Luo bootsrap file joka asentaa Docker-CE:n ja Docker Composen.
+(https://docs.docker.com/compose/wordpress/)
 
 ### Luo uusi kontainer web palvelu
 
