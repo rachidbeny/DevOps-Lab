@@ -37,7 +37,8 @@ Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
 10. Compare: feature-1
 11. Tarkastele muutokset ja valitse Create new pull request
 12. Yhdistä muutokset
-
+###
+Testi
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
 Lataa Jenkins: https://jenkins.io/download/
