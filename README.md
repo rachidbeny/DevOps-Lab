@@ -18,7 +18,7 @@ Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
 7. Pushaa paikallinen repository, keskitettyyn repositoryyn
 8. Varmista että muutokset siirtyivät GitHubiin
 ###
-
+Testi
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
 Lataa Jenkins: https://jenkins.io/download/
