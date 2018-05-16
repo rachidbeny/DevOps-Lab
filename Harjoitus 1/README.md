@@ -2,15 +2,15 @@
 ## Esivalmistelut
 Liity GitHubiin: (https://github.com/join)
 
-Lataa Visual Studio Code: (https://code.visualstudio.com/)
+Lataa ja asenna Visual Studio Code virtuaalikoneelle: (https://code.visualstudio.com/)
 
-Lataa GitHub työpöytäsovellus: (https://desktop.github.com/)
+Lataa ja asenna GitHub työpöytäsovellus virtuaalikoneelle: (https://desktop.github.com/)
 
-Lataa Git paketti: (https://git-scm.com/download/win)
+Lataa ja asenna Git paketti virtuaalikoneelle: (https://git-scm.com/download/win)
 
 ## Versionhallinta harjoitus
 ### Repositoryn hallinta
-1. Luo uusi tyhjä repository
+1. Luo uusi tyhjä repository (__luo README tiedosto__)
 2. Clone or Download -> Open in GitHub Desktop
 3. Luo uusi branch: Development
 4. Muuta README.md tiedostoa
