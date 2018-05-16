@@ -19,6 +19,7 @@ Lataa Jenkins: (https://jenkins.io/download/)
 
 ## Jenkins Blue Ocean ja pipelinet
 1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
-2. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
-3. Luo pipeline että sisältö haetaan GitHubista
-4. Määrittele kääntökomennot ja testaus komennot.
+2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta: '''docker pull jenkins/jenkins:lts''' '''docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts''' (https://github.com/jenkinsci/docker/blob/master/README.md)
+3. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
+4. Luo pipeline että sisältö haetaan GitHubista
+5. Määrittele kääntökomennot ja testaus komennot.
