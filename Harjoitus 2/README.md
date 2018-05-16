@@ -16,3 +16,9 @@ Lataa Jenkins: (https://jenkins.io/download/)
 1. Määritä Pipelinen Build trigger
 2. Määrittele GitHubissa Settings -> Webhooks -> Add webhook
 3. Testaa komentorivillä triggeriä: '''curl http://localhost:8080/job/Demo/build?token=XXXXX'''
+
+## Jenkins Blue Ocean ja pipelinet
+1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+2. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
+3. Luo pipeline että sisältö haetaan GitHubista
+4. Määrittele kääntökomennot ja testaus komennot.
