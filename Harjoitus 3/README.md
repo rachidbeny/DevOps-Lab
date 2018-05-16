@@ -24,17 +24,21 @@ Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
 1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootsrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
 
-### Docker esimerkki
+### Docker asennus
 Docker: (https://docs.docker.com/install/)
 
 1. Asenna Docker Vagranttiin
 2. Suorita Hello World
-3. 
+
+### Luo uusi kontainer web palvelu
+
+(https://github.com/docker-training/webapp)
+
+1. Tee bootsrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
+2. Käynnistä kontaineri
 
 ### Esimerkki Wordpress microservice
 Lataa Docker Compose: (https://docs.docker.com/compose/install/)
 
 1. Luo bootsrap file joka asentaa Docker-CE:n ja Docker Composen.
-(https://docs.docker.com/compose/wordpress/)
-
-### Luo uusi kontainer web palvelu
+2. Asenna wordpress (https://docs.docker.com/compose/wordpress/)
