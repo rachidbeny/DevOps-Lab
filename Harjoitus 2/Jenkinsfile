@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Preparation') {
+            steps {
+                echo 'Hello World prep'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Hello World build'
+            }
+        }
+        stage('Results') {
+            steps {
+                echo 'Hello World results'
+            }
+        }
+    }
+    post { 
+        always { 
+            slackSend 'Hello from pipeline'
+        }
+    }
+}
