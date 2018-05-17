@@ -2,8 +2,12 @@
 ## Esivalmistelut
 1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
+
 ```docker pull jenkins/jenkins:lts```
-```docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts``` (https://github.com/jenkinsci/docker/blob/master/README.md)
+
+```docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts``` 
+
+(https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ## Jenkins
 1. Asenna Jenkins
