@@ -7,12 +7,12 @@ Lataa Vagrant: (https://www.vagrantup.com/downloads.html)
 ### Vagrant käyttö
 Vagrant imaget: (https://app.vagrantup.com/boxes/search)
 
-1. Lataa Vagrant levykuva '''vagrant box add ubuntu/xenial64'''
-2. Avaa työkansio '''cd XXX'''
-3. Alusta vagrant '''vagrant init ubuntu/xenial64'''
-4. Käynnistä vagrant palvelin '''vagrant up'''
-5. Yhdistä palvelimeen '''vagrant ssh'''
-6. Tuhoa palvelin '''vagrant destroy'''
+1. Lataa Vagrant levykuva ```vagrant box add ubuntu/xenial64```
+2. Avaa työkansio ```cd XXX```
+3. Alusta vagrant ```vagrant init ubuntu/xenial64```
+4. Käynnistä vagrant palvelin ```vagrant up```
+5. Yhdistä palvelimeen ```vagrant ssh```
+6. Tuhoa palvelin ```vagrant destroy```
 
 ### Vagrant asetukset
 
