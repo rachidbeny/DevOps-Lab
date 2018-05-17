@@ -4,8 +4,8 @@
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
 
 ```
-docker pull jenkins/jenkins:lts
-docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+sudo docker pull jenkins/jenkins:lts
+sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 ``` 
 
 (https://github.com/jenkinsci/docker/blob/master/README.md)
