@@ -1,6 +1,7 @@
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
-Lataa Jenkins: (https://jenkins.io/download/)
+1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
+2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta: '''docker pull jenkins/jenkins:lts''' '''docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts''' (https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ## Jenkins
 1. Asenna Jenkins
@@ -18,8 +19,6 @@ Lataa Jenkins: (https://jenkins.io/download/)
 3. Testaa komentorivillä triggeriä: '''curl http://localhost:8080/job/Demo/build?token=XXXXX'''
 
 ## Jenkins Blue Ocean ja pipelinet
-1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
-2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta: '''docker pull jenkins/jenkins:lts''' '''docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts''' (https://github.com/jenkinsci/docker/blob/master/README.md)
-3. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
-4. Luo pipeline että sisältö haetaan GitHubista
-5. Määrittele kääntökomennot ja testaus komennot.
+1. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
+2. Luo pipeline että sisältö haetaan GitHubista
+3. Määrittele kääntökomennot ja testaus komennot.
