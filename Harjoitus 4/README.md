@@ -17,6 +17,7 @@ export AWS_SECRET_ACCESS_KEY="XXXXXXXXXXXXXXXXXXXXXXX"
 ```
 
 Kopioi ec2.yaml palvelimelle
+Kopioi ansible-hosts palvelimelle
 
 Luo uusi palvelin
 
