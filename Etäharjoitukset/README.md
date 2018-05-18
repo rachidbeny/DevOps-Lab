@@ -66,7 +66,9 @@
 ## Jenkinsin työn triggeröinti
 * Avaa pipeline (classic view)
 * Triggers: Trigger builds remotely (e.g., from scripts)
-
+* Luo polku (token) ja tallenna muutokset
+* Voit testata triggeröintiä komennolla ```curl http://localhost:8080/job/XXX/build?token=XXXXX``` tai vaihtoehtoisesti Powershellillä ```Invoke-WebRequest http://localhost:8080/job/XXX/build?token=XXXXX ```
+* Huom! GitHubista repositoryn Settings välilehdeltä löytyy Webhooks valinta. Voit luoda sieltä GitHubin ilmoittamaan Jenkinsille että Push on tehty repoon. Vaatii että Jenkins on julkaistu Internettiin.
 
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
