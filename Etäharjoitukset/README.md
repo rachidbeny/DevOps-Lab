@@ -30,3 +30,7 @@
 
 1. Oikealla näppäimellä virtuaalikonetta ja Settings
 ![alt text](https://github.com/PT-Jaloit/DevOps-Lab/blob/master/Et%C3%A4harjoitukset/Screenshots/vbox2.PNG)
+2. Aseta Windows 10 ISO-tiedosto CD-asemaksi
+![alt text](https://github.com/PT-Jaloit/DevOps-Lab/blob/master/Et%C3%A4harjoitukset/Screenshots/vbox3.PNG)
+3. Valitse Windows 10 ISO tiedosto -> Avaa -> Ok
+4. Käynnistä Windows 10 Start valinnasta.
