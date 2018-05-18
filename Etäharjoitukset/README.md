@@ -50,3 +50,6 @@
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
 * https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13
+
+## AWS Elastic Beanstalk
+* https://amazon.qwiklabs.com/focuses/296?locale=en&parent=catalog
