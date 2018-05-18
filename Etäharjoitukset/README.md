@@ -58,6 +58,15 @@
     6. Odota että vagrant käynnistyy
     7. Kopioi initial admin password
     8. Avaa selaimella osoite (http://localhost:8080) ja syötä initial admin password
+## Tutustu Jenkinsin mahdollisuuksiin
+* Node.js luonti, testaus ja julkaisu: (https://github.com/jenkinsci/pipeline-examples/tree/master/jenkinsfile-examples/nodejs-build-test-deploy-docker-notify)
+* Visual Studio tuotoksen buildi: (https://github.com/jenkinsci/pipeline-examples/tree/master/jenkinsfile-examples/msbuild)
+
+
+## Jenkinsin työn triggeröinti
+* Avaa pipeline (classic view)
+* Triggers: Trigger builds remotely (e.g., from scripts)
+
 
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
