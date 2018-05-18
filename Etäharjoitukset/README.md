@@ -47,9 +47,21 @@
 2. Lataa ja asenna GitHub työpöytäsovellus virtuaalikoneelle: (https://desktop.github.com/)
 3. Lataa ja asenna Git paketti virtuaalikoneelle: (https://git-scm.com/download/win)
 
+# Versionhallinta ja jatkuva integraatio/jatkuva toimitus CI/CD
+* (https://github.com/PT-Jaloit/DevOps-Lab/tree/master/Harjoitus%202)
+1 Asenna Jenkins omalle tietokoneellesi
+    1. Kopioi https://github.com/PT-Jaloit/DevOps-Lab/tree/master/Harjoitus%202/Vagrant kansion tiedostot omaalle koneellesi esimerkiksi kansioon C:\Temp\Jenkins
+    2. Avaa komentokehote (Windows+R -> cmd)
+    3. Siirry kansioon C:\Temp\Jenkins
+    4. ```vagrant box add ubuntu/xenial64```
+    5. ```vagrant up```
+    6. Odota että vagrant käynnistyy
+    7. Kopioi initial admin password
+    8. Avaa selaimella osoite (http://localhost:8080) ja syötä initial admin password
+
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
-* https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13
+* (https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13)
 
 ## AWS Elastic Beanstalk
-* https://amazon.qwiklabs.com/focuses/296?locale=en&parent=catalog
+* (https://amazon.qwiklabs.com/focuses/296?locale=en&parent=catalog)
