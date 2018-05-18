@@ -3,6 +3,12 @@
 ### Virtualbox
 1. Lataa ja asenna virtualbox koneellesi: (https://www.virtualbox.org/wiki/Downloads)
 
+### Vagrant
+1. Lataa Vagrant omalle koneellesi: (https://www.vagrantup.com/downloads.html)
+
+### HUOM!
+* Virtualbox ei tue virtualisointia virtualisoinnin sisällä! Virtuaali Windows 10:n sisälle ei Virtualboxin tapauksessa voi asentaa Virtualboxia.
+
 ### Windows 10 median lataus
 1. Lataa Windows Media Creation Tool koneellesi: ![alt text](https://www.microsoft.com/fi-fi/software-download/windows10)
 2. Suorita Media Creation Tool
@@ -34,3 +40,8 @@
 ![alt text](https://github.com/PT-Jaloit/DevOps-Lab/blob/master/Et%C3%A4harjoitukset/Screenshots/vbox3.PNG)
 3. Valitse Windows 10 ISO tiedosto -> Avaa -> Ok
 4. Käynnistä Windows 10 Start valinnasta.
+
+## Ohjelmistojen asentaminen virtuaaliselle Windows 10:lle
+1. Lataa ja asenna Visual Studio Code virtuaalikoneelle: (https://code.visualstudio.com/)
+2. Lataa ja asenna GitHub työpöytäsovellus virtuaalikoneelle: (https://desktop.github.com/)
+3. Lataa ja asenna Git paketti virtuaalikoneelle: (https://git-scm.com/download/win)
