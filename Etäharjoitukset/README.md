@@ -8,6 +8,7 @@
 
 ### HUOM!
 * Virtualbox ei tue virtualisointia virtualisoinnin sisällä! Virtuaali Windows 10:n sisälle ei Virtualboxin tapauksessa voi asentaa Virtualboxia.
+* Windows 10:n asentaminen Virtualboxiin ei ole välttämättömyys mikäli haluat asentaa ohjelmistot suoraan omalle koneellesi. Tässä tapauksessa siirry kohtaan: "Ohjelmistojen asentaminen virtuaaliselle Windows 10:lle"
 
 ### Windows 10 median lataus
 1. Lataa Windows Media Creation Tool koneellesi: ![alt text](https://www.microsoft.com/fi-fi/software-download/windows10)
