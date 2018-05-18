@@ -84,6 +84,7 @@
         * Esimerkiksi: config.vm.network :forwarded_port, guest: 8081, host: 8081
         * HUOM. Muuta kuuneltava portti ja portti johon liikenne siirretään isäntä palvelimelle.
     * ```vagrant reload```
+    
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
 * (https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13)
