@@ -46,3 +46,7 @@
 1. Lataa ja asenna Visual Studio Code virtuaalikoneelle: (https://code.visualstudio.com/)
 2. Lataa ja asenna GitHub työpöytäsovellus virtuaalikoneelle: (https://desktop.github.com/)
 3. Lataa ja asenna Git paketti virtuaalikoneelle: (https://git-scm.com/download/win)
+
+# Tuotantoympäristöt
+## Azure Web App harjoitus
+* https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13
