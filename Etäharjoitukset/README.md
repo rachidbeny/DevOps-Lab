@@ -42,7 +42,7 @@
 3. Valitse Windows 10 ISO tiedosto -> Avaa -> Ok
 4. Käynnistä Windows 10 Start valinnasta.
 
-## Ohjelmistojen asentaminen virtuaaliselle Windows 10:lle
+## Ohjelmistojen asentaminen Windows 10:lle
 1. Lataa ja asenna Visual Studio Code virtuaalikoneelle: (https://code.visualstudio.com/)
 2. Lataa ja asenna GitHub työpöytäsovellus virtuaalikoneelle: (https://desktop.github.com/)
 3. Lataa ja asenna Git paketti virtuaalikoneelle: (https://git-scm.com/download/win)
