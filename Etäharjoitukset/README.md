@@ -70,6 +70,20 @@
 * Voit testata triggeröintiä komennolla ```curl http://localhost:8080/job/XXX/build?token=XXXXX``` tai vaihtoehtoisesti Powershellillä ```Invoke-WebRequest http://localhost:8080/job/XXX/build?token=XXXXX ```
 * Huom! GitHubista repositoryn Settings välilehdeltä löytyy Webhooks valinta. Voit luoda sieltä GitHubin ilmoittamaan Jenkinsille että Push on tehty repoon. Vaatii että Jenkins on julkaistu Internettiin.
 
+# Docker
+## Dockerin alkeet
+1. Docker on asennettu Jenkinsin Vagrant virtuaalikoneeseen.
+2. Suorita komento ```vagrant ssh``` 
+    1. Seuraa ohjeen (https://github.com/docker/labs/tree/master/beginner/) vaiheita
+    2. Setup
+    3. 1.0 Running your first container
+    4. 2.0 Webapps with Docker
+    5. 3.0 Deploying an app to a Swarm
+* HUOM! Mikäli tarvitset lisää portteja kuuneltavaksi tulee Vagrantfileä muuttaa.
+    * Lisää Vagrantfileen uusi rivi:
+        * Esimerkiksi: config.vm.network :forwarded_port, guest: 8081, host: 8081
+        * HUOM. Muuta kuuneltava portti ja portti johon liikenne siirretään isäntä palvelimelle.
+    * ```vagrant reload```
 # Tuotantoympäristöt
 ## Azure Web App harjoitus
 * (https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=1b0c3b53-801d-49f3-8d08-e43cb2843d13)
