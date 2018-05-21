@@ -3,8 +3,8 @@ RUN wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q python-all python-pip 
 RUN pip install -qr requirements.txt
-ADD ./WebDemo /opt/WebDemo/
-WORKDIR /opt/WebDemo
+ADD ./webdemo /opt/webdemo/
+WORKDIR /opt/webdemo
 EXPOSE 7272
 CMD ["python", "demoapp/server.py"]
 CMD ["robot", "login_tests/login_tests"]
