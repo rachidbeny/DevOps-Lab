@@ -13,4 +13,4 @@ sudo git clone https://bitbucket.org/robotframework/webdemo.git
 cd webdemo
 sudo wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%20testaus/Docker/Dockerfile
 sudo docker build -t robot .
-sudo docker run -d -p 80:7272 robot
+sudo docker run -p 80:7272 robot

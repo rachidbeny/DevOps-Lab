@@ -61,7 +61,7 @@ RUN mv /usr/lib64/chromium-browser/chromium-browser /usr/lib64/chromium-browser/
 ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
 
-RUN dnf install -y python-all python-pip wget
+#RUN dnf install -y python-all python-pip wget
 RUN wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%20testaus/Docker/requirements.txt
 RUN pip install -qr requirements.txt
 ADD ./webdemo /opt/webdemo/
