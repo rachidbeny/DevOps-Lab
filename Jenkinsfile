@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''mkdir /var/tmp/demo
 cd /var/tmp/demo
-sudo git clone https://bitbucket.org/robotframework/webdemo.git
+git clone https://bitbucket.org/robotframework/webdemo.git
 cd webdemo
 wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%20testaus/Docker/Dockerfile
 docker build -t robot .
