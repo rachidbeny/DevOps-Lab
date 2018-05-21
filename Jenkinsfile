@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'ubuntu:16.04'
-    }
-
-  }
+  agent any
   stages {
     stage('Test') {
       agent {
@@ -14,14 +9,37 @@ pipeline {
 
       }
       steps {
-        sh '''rm /var/tmp/demo -R
-mkdir /var/tmp/demo
+        sh '''sudo apt-get update
+
+sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt-get update
+
+sudo apt-get -y install docker-ce
+
+
+
+sudo apt-get -y install git
+
+sudo mkdir /var/tmp/demo
+
 cd /var/tmp/demo
-git clone https://bitbucket.org/robotframework/webdemo.git
+
+sudo git clone https://bitbucket.org/robotframework/webdemo.git
+
 cd webdemo
-wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketter√§%20testaus/Docker/Dockerfile
-docker build -t robot .
-docker run -p 80:7272 robot'''
+
+sudo wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketter‰%20testaus/Docker/Dockerfile
+
+sudo docker build -t robot .
+
+sudo docker run -p 80:7272 robot'''
       }
     }
   }
