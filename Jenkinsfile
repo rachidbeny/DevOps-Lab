@@ -7,6 +7,12 @@ pipeline {
   }
   stages {
     stage('Test') {
+      agent {
+        docker {
+          image 'ubuntu:16.04'
+        }
+
+      }
       steps {
         sh '''rm /var/tmp/demo -R
 mkdir /var/tmp/demo
