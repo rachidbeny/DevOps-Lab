@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''mkdir /var/tmp/demo
+        sh '''rm /var/tmp/demo -R
+mkdir /var/tmp/demo
 cd /var/tmp/demo
 git clone https://bitbucket.org/robotframework/webdemo.git
 cd webdemo
