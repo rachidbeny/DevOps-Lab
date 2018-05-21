@@ -48,10 +48,14 @@ RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/$GECKO_DRI
       && mv geckodriver /opt/robotframework/drivers/geckodriver \
       && rm geckodriver-$GECKO_DRIVER_VERSION-linux64.tar.gz
 
+RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromedriver.sh"
+RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromium-browser.sh"
+RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/run-tests-in-virtual-screen.sh"
+
 # Prepare binaries to be executed
-#COPY bin/chromedriver.sh /opt/robotframework/bin/chromedriver
-#COPY bin/chromium-browser.sh /opt/robotframework/bin/chromium-browser
-#COPY bin/run-tests-in-virtual-screen.sh /opt/robotframework/bin/
+COPY chromedriver.sh /opt/robotframework/bin/chromedriver
+COPY chromium-browser.sh /opt/robotframework/bin/chromium-browser
+COPY run-tests-in-virtual-screen.sh /opt/robotframework/bin/
 
 # FIXME: below is a workaround, as the path is ignored
 RUN mv /usr/lib64/chromium-browser/chromium-browser /usr/lib64/chromium-browser/chromium-browser-original \
