@@ -4,8 +4,8 @@ MAINTAINER Paul Podgorsek <ppodgorsek@users.noreply.github.com>
 LABEL description Robot Framework in Docker.
 
 # Setup volumes for input and output
-VOLUME /opt/robotframework/reports
-VOLUME /opt/robotframework/tests
+#VOLUME /opt/robotframework/reports
+#VOLUME /opt/robotframework/tests
 
 # Setup X Window Virtual Framebuffer
 ENV SCREEN_COLOUR_DEPTH 24
@@ -48,14 +48,14 @@ RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/$GECKO_DRI
       && mv geckodriver /opt/robotframework/drivers/geckodriver \
       && rm geckodriver-$GECKO_DRIVER_VERSION-linux64.tar.gz
 
-RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromedriver.sh"
-RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromium-browser.sh"
-RUN wget -q "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/run-tests-in-virtual-screen.sh"
-
+RUN mkdir -p /opt/robotframework/bin/
+RUN wget "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromedriver.sh" -O /opt/robotframework/bin/chromedriver
+RUN wget "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/chromium-browser.sh" -O /opt/robotframework/bin/chromium-browser
+RUN wget "https://raw.githubusercontent.com/ppodgorsek/docker-robot-framework/master/bin/run-tests-in-virtual-screen.sh" -O /opt/robotframework/bin/run-tests-in-virtual-screen.sh
 # Prepare binaries to be executed
-COPY chromedriver.sh /opt/robotframework/bin/chromedriver
-COPY chromium-browser.sh /opt/robotframework/bin/chromium-browser
-COPY run-tests-in-virtual-screen.sh /opt/robotframework/bin/
+#COPY chromedriver.sh /opt/robotframework/bin/chromedriver
+#COPY chromium-browser.sh /opt/robotframework/bin/chromium-browser
+#COPY run-tests-in-virtual-screen.sh /opt/robotframework/bin/
 
 # FIXME: below is a workaround, as the path is ignored
 RUN mv /usr/lib64/chromium-browser/chromium-browser /usr/lib64/chromium-browser/chromium-browser-original \
@@ -66,10 +66,11 @@ ENV PATH=/opt/robotframework/bin:/opt/robotframework/drivers:$PATH
 
 
 #RUN dnf install -y python-all python-pip wget
-RUN wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%20testaus/Docker/requirements.txt
-RUN pip install -qr requirements.txt
-ADD ./webdemo /opt/webdemo/
-WORKDIR /opt/webdemo
-EXPOSE 7272
-CMD ["screen", "-d -m python demoapp/server.py"]
-CMD ["robot", "login_tests"]
+#RUN wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Ketterä%20testaus/Docker/requirements.txt
+#RUN pip install -qr requirements.txt
+#ADD ./webdemo/login_tests /opt/robotframework/tests
+#WORKDIR /opt/robotframework
+#EXPOSE 7272
+#CMD ["screen", "-d -m python demoapp/server.py"]
+#CMD ["run-tests-in-virtual-screen.sh"]
+#RUN ls /opt/robotframework/reports
