@@ -71,5 +71,5 @@ RUN pip install -qr requirements.txt
 ADD ./webdemo /opt/webdemo/
 WORKDIR /opt/webdemo
 EXPOSE 7272
-CMD ["python", "demoapp/server.py"]
+CMD ["screen", "-d -m python demoapp/server.py"]
 CMD ["robot", "login_tests"]
