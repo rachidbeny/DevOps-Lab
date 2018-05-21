@@ -7,4 +7,4 @@ ADD ./webdemo /opt/webdemo/
 WORKDIR /opt/webdemo
 EXPOSE 7272
 CMD ["python", "demoapp/server.py"]
-CMD ["robot", "login_tests/login_tests"]
+CMD ["robot", "login_tests"]
