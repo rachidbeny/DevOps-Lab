@@ -26,6 +26,7 @@ sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home je
 3. Testaa komentorivillä triggeriä: '''curl http://localhost:8080/job/Demo/build?token=XXXXX'''
 
 ## Jenkins Blue Ocean ja pipelinet
-1. Valitse haluamasi koodi kieli jonka haluat kääntää/testata. Esimerkiksi: C, PHP, Python, Ruby, Go, Java
-2. Luo pipeline että sisältö haetaan GitHubista
-3. Määrittele kääntökomennot ja testaus komennot.
+1. Luodaan esimerkki pipeline joka luo Node JS sovelluksen ja testaa tämän (https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
+2. Luo pipeline että sisältö haetaan GitHubista. Kloonaa (https://github.com/jenkins-docs/simple-node-js-react-npm-app) sisältö omaan GitHub repositoryyn. 
+3. Luo pipeline vaihe kerrallaan. (Build, Test, Deliver) (https://jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/)
+ 

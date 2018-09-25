@@ -18,11 +18,11 @@ Vagrant imaget: (https://app.vagrantup.com/boxes/search)
 
 Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)
 
-Bootsrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)
+Bootstrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)
 
 Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
-1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootsrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
+1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootstrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
 
 ### Docker asennus
 Docker: (https://docs.docker.com/install/)
@@ -34,11 +34,11 @@ Docker: (https://docs.docker.com/install/)
 
 (https://github.com/docker-training/webapp)
 
-1. Tee bootsrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
+1. Tee bootstrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
 2. Käynnistä kontaineri
 
 ### Esimerkki Wordpress microservice
 Lataa Docker Compose: (https://docs.docker.com/compose/install/)
 
-1. Luo bootsrap file joka asentaa Docker-CE:n ja Docker Composen.
+1. Luo bootstrap file joka asentaa Docker-CE:n ja Docker Composen.
 2. Asenna wordpress (https://docs.docker.com/compose/wordpress/)

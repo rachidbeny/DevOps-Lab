@@ -4,16 +4,15 @@
     connection: local
     gather_facts: False
     tags: provisioning
-    # Necessary Variables for creating/provisioning the EC2 Instance
+    
     vars:
       instance_type: t2.micro
-      security_group: demo-server # Change the security group name here
-      image: ami-ca0135b3 # This is an AMI i created myself
-      keypair: Jalo-IT # This is one of my keys that i already have in AWS
-      region: eu-west-1 # Change the Region
+      security_group: demo-server
+      image: ami-ca0135b3
+      keypair: Jalo-IT
+      region: eu-west-1
       count: 1
 
-    # Task that will be used to Launch/Create an EC2 Instance
     tasks:
 
       - name: Create a security group
