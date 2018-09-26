@@ -4,11 +4,11 @@
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
 
 ```
-1. Lataa Vagrant levykuva ```vagrant box add ubuntu/xenial64```
-2. Avaa työkansio ```cd C:\Temp\Harjoitus2```
-3. Alusta vagrant ```vagrant init ubuntu/xenial64```
-4. Käynnistä vagrant palvelin ```vagrant up```
-5. Yhdistä palvelimeen ```vagrant ssh```
+1. Lataa Vagrant levykuva **vagrant box add ubuntu/xenial64**
+2. Avaa työkansio **cd C:\Temp\Harjoitus2**
+3. Alusta vagrant **vagrant init ubuntu/xenial64**
+4. Käynnistä vagrant palvelin **vagrant up**
+5. Yhdistä palvelimeen **vagrant ssh**
 ```
 
 ```
@@ -20,8 +20,16 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt-get update
 sudo apt-get -y install docker-ce
 
-sudo docker pull jenkins/jenkins:lts
-sudo docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+sudo docker pull jenkinsci/blueocean
+sudo docker run \
+  --rm \
+  -u root \
+  -p 8080:8080 \
+  -p 50000:50000 \
+  -v jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v "$HOME":/home \
+  jenkinsci/blueocean
 ``` 
 
 (https://github.com/jenkinsci/docker/blob/master/README.md)
