@@ -1,9 +1,21 @@
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
-1. Lataa VirtualBox (https://www.virtualbox.org/wiki/Downloads)
-2. Lataa Vagrant (https://www.vagrantup.com/downloads.html)
+1. Lataa ja asenna VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+2. Lataa ja asenna Vagrant (https://www.vagrantup.com/downloads.html)
 
-## Esivalmistelut
+## Asennus
+1. Asenna Linux palvelin Vagrantin avulla
+```cmd
+echo Komentorivillä:
+vagrant box add ubuntu/trusty64
+echo Levykuvia muita: https://app.vagrantup.com/boxes/search
+
+echo Luo työkansio C:\Temp kansioon. Esim C:\Temp\Harjoitus2
+
+cd C:\Temp\Harjoitus2
+vagrant init ubuntu/trusty64
+vagrant up
+```
 1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
 
