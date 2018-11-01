@@ -1,5 +1,9 @@
 # Harjoitus 2 - Jatkuvan integraation toteutus
 ## Esivalmistelut
+1. Lataa VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+2. Lataa Vagrant (https://www.vagrantup.com/downloads.html)
+
+## Esivalmistelut
 1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
 
