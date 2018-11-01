@@ -15,17 +15,10 @@ echo Luo työkansio C:\Temp kansioon. Esim C:\Temp\Harjoitus2
 cd C:\Temp\Harjoitus2
 vagrant init ubuntu/trusty64
 vagrant up
+vagrant ssh
 ```
 1. Asenna Jenkins Linux palvelimelle ja ota käyttöön Blue Ocean lisäosa ja luo tällä uusi pipeline (https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Ubuntu)
 2. Kun olet epäonnistunut tarpeeksi asennuksessa niin käytä seuraavaa ohjetta:
-
-```
-1. Lataa Vagrant levykuva **vagrant box add ubuntu/xenial64**
-2. Avaa työkansio **cd C:\Temp\Harjoitus2**
-3. Alusta vagrant **vagrant init ubuntu/xenial64**
-4. Käynnistä vagrant palvelin **vagrant up**
-5. Yhdistä palvelimeen **vagrant ssh**
-```
 
 ```
 sudo apt-get update
