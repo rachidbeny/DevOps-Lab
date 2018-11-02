@@ -12,4 +12,4 @@ cd /var/tmp/demo
 sudo git clone https://github.com/PT-Jaloit/Test2.git
 cd Test2/NodeWebApp
 sudo docker build -t nodewebapp .
-sudo docker run -d -p 80:3000 nodewebapp
+sudo docker run -d -p 8080:3000 nodewebapp

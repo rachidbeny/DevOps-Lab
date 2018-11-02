@@ -12,4 +12,4 @@ cd /var/tmp/demo
 sudo git clone https://github.com/docker-training/webapp.git
 cd webapp
 sudo docker build -t testwebapp .
-sudo docker run -d -p 80:5000 testwebapp
+sudo docker run -d -p 8081:5000 testwebapp
