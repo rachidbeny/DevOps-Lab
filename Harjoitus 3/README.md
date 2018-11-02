@@ -37,6 +37,20 @@ Docker: (https://docs.docker.com/install/)
 1. Tee bootstrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
 2. Käynnistä kontaineri
 
+```bash
+# Asenna GIT
+sudo apt-get -y install git
+
+# Git repositoryn kloonaus
+sudo git clone https://github.com/docker-training/webapp.git
+
+# Docker imagen koonti Dockerfilestä
+sudo docker build -t testwebapp .
+
+# Docker imagen käynnistys
+sudo docker run -d -p 80:5000 testwebapp
+```
+
 ### Esimerkki Wordpress microservice
 Lataa Docker Compose: (https://docs.docker.com/compose/install/)
 
