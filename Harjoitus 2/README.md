@@ -46,4 +46,6 @@ sudo docker run \
 1. Luodaan esimerkki pipeline joka luo Node JS sovelluksen ja testaa tämän (https://jenkins.io/doc/tutorials/build-a-node-js-and-react-app-with-npm/)
 2. Luo pipeline että sisältö haetaan GitHubista. Kloonaa (https://github.com/jenkins-docs/simple-node-js-react-npm-app) sisältö omaan GitHub repositoryyn. 
 3. Luo pipeline vaihe kerrallaan. (Build, Test, Deliver) (https://jenkins.io/doc/tutorials/create-a-pipeline-in-blue-ocean/)
+
+Valmis esimerkki: (https://github.com/PT-Jaloit/DevOps-Test)
  
