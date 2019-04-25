@@ -1,10 +1,10 @@
-# Harjoitus 3 - Kontainerit ja testausympäristöt
-## Esivalmistelut
-Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
+# Example 3 - Container and development environments
+## Pre tasks
+Download Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
 
-Lataa Vagrant: (https://www.vagrantup.com/downloads.html)
+Download Vagrant: (https://www.vagrantup.com/downloads.html)
 
-### Vagrant käyttö
+### Vagrant usage
 Vagrant images: (https://app.vagrantup.com/boxes/search)
 
 1. Download Vagrant box ```vagrant box add ubuntu/xenial64```
@@ -14,15 +14,15 @@ Vagrant images: (https://app.vagrantup.com/boxes/search)
 5. Connect to server ```vagrant ssh```
 6. Destroy server ```vagrant destroy```
 
-### Vagrant asetukset
+### Vagrant settings
 
-Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)
+Vagrant network settings: (https://www.vagrantup.com/docs/networking/)
 
-Bootstrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)
+Bootstrap script: (https://www.vagrantup.com/docs/provisioning/file.html)
 
 Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
-1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootstrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
+1. Change Vagrantfile, that on startup vagrant runs bootstrap script and forward network por 80 to host 8080 port. Give name Example3.
 
 ### Docker installation
 Docker: (https://docs.docker.com/install/)
