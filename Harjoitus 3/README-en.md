@@ -24,18 +24,22 @@ Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
 1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootstrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
 
-### Docker asennus
+### Docker installation
 Docker: (https://docs.docker.com/install/)
 
-1. Asenna Docker Vagranttiin
-2. Suorita Hello World
+1. Install Docker to Vagrant
+2. Run Hello World
 
-### Luo uusi kontainer web palvelu
+* Every command you execute, keep them in notepad etc. *
+
+### Create new container service
 
 (https://github.com/docker-training/webapp)
 
-1. Tee bootstrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
-2. Käynnistä kontaineri
+1. Clone Github repository
+2. Create docker image from Dockerfile
+3. Start Container
+4. Create bootstrap script that install all automatically
 
 ```bash
 # Asenna GIT
@@ -51,8 +55,8 @@ sudo docker build -t testwebapp .
 sudo docker run -d -p 80:5000 testwebapp
 ```
 
-### Esimerkki Wordpress microservice
-Lataa Docker Compose: (https://docs.docker.com/compose/install/)
+### Example: Wordpress microservice
+Download Docker Compose: (https://docs.docker.com/compose/install/)
 
-1. Luo bootstrap file joka asentaa Docker-CE:n ja Docker Composen.
-2. Asenna wordpress (https://docs.docker.com/compose/wordpress/)
+1. Create bootsrap script which installs Docker-CE and Docker compose
+2. Install Wordpress (https://docs.docker.com/compose/wordpress/)
