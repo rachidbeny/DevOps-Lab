@@ -42,16 +42,16 @@ Docker: (https://docs.docker.com/install/)
 4. Create bootstrap script that install all automatically
 
 ```bash
-# Asenna GIT
+# Install GIT
 sudo apt-get -y install git
 
-# Git repositoryn kloonaus
+# Clone Git repository
 sudo git clone https://github.com/docker-training/webapp.git
 
-# Docker imagen koonti Dockerfilestä
+# Create docker image from Dockerfile
 sudo docker build -t testwebapp .
 
-# Docker imagen käynnistys
+# Start Container
 sudo docker run -d -p 80:5000 testwebapp
 ```
 
