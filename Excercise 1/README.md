@@ -1,9 +1,9 @@
 # Excercise 1 - Version Control Systems
 ## Pre Tasks
-Joim GitHubiin: (https://github.com/join)
+Join GitHub: (https://github.com/join)
 Download and install Visual Studio Code: (https://code.visualstudio.com/)
 
-Download and installa Git-tools: (https://git-scm.com/download/win)
+Download and install Git-tools: (https://git-scm.com/download/win)
 
 ## Version Control system excercise
 ### Create repository to Git Hub
