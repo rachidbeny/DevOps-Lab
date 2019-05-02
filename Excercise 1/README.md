@@ -13,13 +13,41 @@ Download and install Git-tools: (https://git-scm.com/download/win)
 3. Computer: Create working directory for project
 4. Visual Studio Code: File -> Open Folder
 5. Visual Studio Code: Terminal -> New Terminal -> git clone (__Copy Github repository URL Here__)
-6. GitHub: Create new branch: Development
-7. Visual Studio Code: Pull changes
-8. Visual Studio Code: Change branch
-9. Visual Studio Code: Change README.md file
-10. Visual Studio Code: Add changes, Commit changes
-10. Visual Studio Code: Push changes
-11. GitHub: Confirm changes
+
+### Edit Readme.md
+1. Visual Studio Code: Open README.md
+2. Visual Studio Code: Edit README.md
+'''
+* Bullet point
+1. Luettelo
+2. Luettelo 2
+
+_Italic_
+
+__Bold__
+
+*Italic*
+
+**Bold**
+
+# Otsikko
+## 2-tason otsikko
+### 3-Tason otsikko
+(www.google.fi) URL-osoite
+'''
+3. Visual Studio Code: Add Changes
+4. Visual Studio Code: Commit changes
+5. Visual Studio Code: Push changes to Github
+6. GitHub: Check changes
+
+### Create new branch
+1. GitHub: Create new branch: Development
+2. Visual Studio Code: Pull changes
+3. Visual Studio Code: Change branch
+4. Visual Studio Code: Change README.md file
+5. Visual Studio Code: Add changes, Commit changes
+6. Visual Studio Code: Push changes
+7. GitHub: Confirm changes
 
 ### Merge Branches
 1. GitHub: Chose Pull request tab
