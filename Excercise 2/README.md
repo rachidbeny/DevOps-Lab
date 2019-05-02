@@ -12,11 +12,18 @@
 6. Wait until you see Initialization password
 7. Go to http://localhost:8080
 8. Copy Init passwd and create user for Jenkins server
-9. Install using recommend plugins
+9. Install using suggested plugins
 (https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ## Jenkins Blue Ocean
 1. In Jenkins open Blue Ocean
 2. Connect blue ocean with your github account
+3. Select Github organization
+4. Select Github repository
 
- 
+### Create Pipeline (Build, Test)
+1. Agent: any
+2. Phase 1: New phase (Build)
+3. Phase 1: CMD command: npm install
+4. Phase 2: New phase (Test)
+5. Phase 2: CMD command: npm test
