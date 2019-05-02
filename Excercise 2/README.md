@@ -43,3 +43,4 @@
  - npm test
  4. Save pipeline
   - Commit to new branch: Development
+  - Save & run
