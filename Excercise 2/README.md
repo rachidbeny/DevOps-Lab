@@ -30,7 +30,9 @@
 7. Select Github repository
 
 ### Create Pipeline (Build, Test)
-1. Agent: any
+1. Agent: Docker
+ - Image: node:8-alpine
+ - Args: -p 3000:3000
 2. Phase 1: New phase (Build)
 3. Phase 1: CMD command: npm install
 4. Phase 2: New phase (Test)
