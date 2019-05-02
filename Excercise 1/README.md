@@ -11,10 +11,14 @@ Download and install Git-tools: (https://git-scm.com/download/win)
 ## Version Control system excercise
 ### Create repository to Git Hub
 1. GitHub: Create new empty github repository (__Create also README file__)
+![Capture](/Excercise%201/Screencapture/CreateRepo.png?raw=true)
 2. GitHub: Clone or Download repository -> Get URL
+![Capture](/Excercise%201/Screencapture/CloneRepoURL.png?raw=true)
 3. Computer: Create working directory for project
 4. Visual Studio Code: File -> Open Folder
+![Capture](/Excercise%201/Screencapture/VSCode_OpenFolder.png?raw=true)
 5. Visual Studio Code: Terminal -> New Terminal -> git clone (__Copy Github repository URL Here__)
+![Capture](/Excercise%201/Screencapture/VSCode_GitClone.png?raw=true)
 
 ### Edit Readme.md
 1. Visual Studio Code: Open README.md
