@@ -2,7 +2,7 @@
 ## Pre Tasks
 Join GitHub: (https://github.com/join)
 
-![Screenshot](/Excercise 1/Screencapture/JoinGithub.png?raw=true)
+(/Screencapture/JoinGithub.png?raw=true)
 
 Download and install Visual Studio Code: (https://code.visualstudio.com/)
 
