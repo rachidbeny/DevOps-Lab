@@ -21,13 +21,13 @@
 2. Create a new Pipeline
 3. Where do you store your code?: GitHub
 4. Create an access token here
-  1. Login with your github account
-  2. Write token description
-  3. Generate token
-  4. Copy token and paste it to Jenkins dialog
-2. Connect blue ocean with your github account
-3. Select Github organization
-4. Select Github repository
+  - Login with your github account
+  - Write token description
+  - Generate token
+  - Copy token and paste it to Jenkins dialog
+5. Connect blue ocean with your github account
+6. Select Github organization
+7. Select Github repository
 
 ### Create Pipeline (Build, Test)
 1. Agent: any
