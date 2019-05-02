@@ -41,3 +41,5 @@
  - Steps -> Add step
  - Shell Script
  - npm test
+ 4. Save pipeline
+  - Commit to new branch: Development
