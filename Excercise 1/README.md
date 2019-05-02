@@ -2,6 +2,8 @@
 ## Pre Tasks
 Join GitHub: (https://github.com/join)
 
+![Screenshot](Excercise 1/Screencapture/JoinGithub.png)
+
 Download and install Visual Studio Code: (https://code.visualstudio.com/)
 
 Download and install Git-tools: (https://git-scm.com/download/win)
