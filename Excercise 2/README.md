@@ -64,4 +64,4 @@ _Once Delivery is up and running, build not complete unless delivery phase have 
 
  ### Edit Jenkinsfile
  1. Edit Jenkinsfile in git repository
- 2. Overwrite contents of your git repository Jenkinsfile to same as (Jenkinsfile)
+ 2. Overwrite contents of your git repository Jenkinsfile to same as [a relative link](Jenkinsfile)
