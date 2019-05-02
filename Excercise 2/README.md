@@ -58,3 +58,9 @@
  - Steps -> Add step
  - Shell Script
  - npm start
+ 3. Check that application is running: http://localhost:3000
+
+ ### Edit Jenkinsfile
+ 1. Once Delivery is up and running, build not complete unless delivery phase have not completed. Modification to Git, which launches new build process will not launch because network port is already in use.
+ 2. Edit Jenkinsfile in git repository
+ 3. Overwrite contents of your git repository Jenkinsfile to same as (Jenkinsfile)

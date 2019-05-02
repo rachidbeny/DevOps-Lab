@@ -1,25 +1,38 @@
 pipeline {
-    agent any
-    stages {
-        stage('Preparation') {
-            steps {
-                echo 'Hello World prep'
-            }
+  agent none 
+  stages {
+    stage('Stop previous Docker container') {
+        agent any 
+        steps {
+            sh 'docker stop Docker_example || true && docker rm Docker_example || true'
         }
+    }
+
+  stage('Run app in Docker container') {
+      agent {
+        docker {
+          image 'node:8-alpine'
+          args '-p 3000:3000 --name Docker_example'
+        }
+
+      }
+      stages {
         stage('Build') {
-            steps {
-                echo 'Hello World build'
-            }
+          steps {
+            sh 'npm install'
+          }
         }
-        stage('Results') {
-            steps {
-                echo 'Hello World results'
-            }
+        stage('Test') {
+          steps {
+            sh 'npm test'
+          }
         }
+        stage('Delivery') {
+          steps {
+            sh 'npm start'
+          }
+        }
+      }
     }
-    post { 
-        always { 
-            slackSend 'Hello from pipeline'
-        }
-    }
+  }
 }
