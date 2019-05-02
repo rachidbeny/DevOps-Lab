@@ -50,3 +50,11 @@
 2. Select Project
 3. Configure
 4. Scan Repository Triggers -> Periodically if not otherwise run -> 1 minute
+5. Save
+
+### Add delivery to pipeline
+1. Edit Jenkins pipeline
+2. Phase 3: New phase (Delivery)
+ - Steps -> Add step
+ - Shell Script
+ - npm start
