@@ -13,6 +13,7 @@
 7. Go to http://localhost:8080
 8. Copy Init passwd and create user for Jenkins server
 9. Install using suggested plugins
+
 (https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ## Jenkins Blue Ocean
