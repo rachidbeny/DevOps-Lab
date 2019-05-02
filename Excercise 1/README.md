@@ -17,7 +17,7 @@ Download and install Git-tools: (https://git-scm.com/download/win)
 ### Edit Readme.md
 1. Visual Studio Code: Open README.md
 2. Visual Studio Code: Edit README.md
-'''
+```
 * Bullet point
 1. Luettelo
 2. Luettelo 2
@@ -34,7 +34,7 @@ __Bold__
 ## 2-tason otsikko
 ### 3-Tason otsikko
 (www.google.fi) URL-osoite
-'''
+```
 3. Visual Studio Code: Add Changes
 4. Visual Studio Code: Commit changes
 5. Visual Studio Code: Push changes to Github
