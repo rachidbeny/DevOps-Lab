@@ -34,6 +34,10 @@
  - Image: node:8-alpine
  - Args: -p 3000:3000
 2. Phase 1: New phase (Build)
-3. Phase 1: CMD command: npm install
-4. Phase 2: New phase (Test)
-5. Phase 2: CMD command: npm test
+ - Steps -> Add step
+ - Shell Script
+ - npm install
+3. Phase 2: New phase (Test)
+ - Steps -> Add step
+ - Shell Script
+ - npm test
