@@ -17,7 +17,14 @@
 (https://github.com/jenkinsci/docker/blob/master/README.md)
 
 ## Jenkins Blue Ocean
-1. In Jenkins open Blue Ocean
+1. In Jenkins "Open Blue Ocean"
+2. Create a new Pipeline
+3. Where do you store your code?: GitHub
+4. Create an access token here
+  1. Login with your github account
+  2. Write token description
+  3. Generate token
+  4. Copy token and paste it to Jenkins dialog
 2. Connect blue ocean with your github account
 3. Select Github organization
 4. Select Github repository
