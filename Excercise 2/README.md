@@ -44,3 +44,9 @@
  4. Save pipeline
   - Commit to new branch: Development
   - Save & run
+
+### Schedule automatic scan
+1. Go to Classic Jenkins UI
+2. Select Project
+3. Configure
+4. Scan Repository Triggers -> Periodically if not otherwise run -> 1 minute
