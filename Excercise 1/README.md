@@ -1,6 +1,7 @@
 # Excercise 1 - Version Control Systems
 ## Pre Tasks
 Join GitHub: (https://github.com/join)
+
 Download and install Visual Studio Code: (https://code.visualstudio.com/)
 
 Download and install Git-tools: (https://git-scm.com/download/win)
@@ -8,10 +9,10 @@ Download and install Git-tools: (https://git-scm.com/download/win)
 ## Version Control system excercise
 ### Create repository to Git Hub
 1. GitHub: Create new empty github repository (__Create also README file__)
-2. GitHub: Clone repository -> Get URL
+2. GitHub: Clone or Download repository -> Get URL
 3. Computer: Create working directory for project
-4. Visual Studio Code: Open Folder
-5. Visual Studio Code: New Terminal -> git clone (__Copy Github repository URL Here__)
+4. Visual Studio Code: File -> Open Folder
+5. Visual Studio Code: Terminal -> New Terminal -> git clone (__Copy Github repository URL Here__)
 6. GitHub: Create new branch: Development
 7. Visual Studio Code: Pull changes
 8. Visual Studio Code: Change branch
@@ -28,18 +29,12 @@ Download and install Git-tools: (https://git-scm.com/download/win)
 5. GitHub: Check changes and chose -> Create new pull request
 6. GitHub: Merge changes
 
-### Branchien yhdistäminen, konfliktien ratkaiseminen
-1. Luo uusi branch: Feature-1
-2. Muuta README.md tiedostoa, muuta README.md tiedostoa myös development branchissa
-3. Varmista muutokset GitHub Desktopista
-4. Committaa muutokset
-5. Pushaa paikallinen repository, keskitettyyn repositoryyn
-6. Varmista että muutokset siirtyivät GitHubiin
-7. GitHubissa valitse välilehti Pull requests
-8. New pull request
-9. Base: development
-10. Compare: feature-1
-11. Tarkastele muutokset ja valitse Create new pull request
-12. Ratkaise konfliktit
-13. Yhdistä muutokset
-14. Poista feature-1 branch
+### Copy example project code to github
+1. GitHub: (https://github.com/shapeshed/express_example)
+2. GitHub: Clone or Download -> Download ZIP
+3. Computer: Copy contents of ZIP file to your Project
+4. Visual Studio Code: Make sure that you are working with development, change branch to development
+5. Visual Studio Code: Add changes
+6. Visual Studio Code: Commit changes
+7. Visual Studio Code: Push changes to GitHub
+8. GitHub: Confirm changes
