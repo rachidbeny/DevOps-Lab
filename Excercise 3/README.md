@@ -22,7 +22,15 @@ Bootstrap script: (https://www.vagrantup.com/docs/provisioning/file.html)
 
 Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
-1. Change Vagrantfile, that on startup vagrant runs bootstrap script and forward network por 80 to host 8080 port. Give name Example3.
+1. Change Vagrantfile, that on startup vagrant runs bootstrap script and forward network port 80 to host 8080 port. Give name Example3.
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.hostname = "Example3"
+end`
+```
 
 ### Docker installation
 Docker: (https://docs.docker.com/install/)
