@@ -68,3 +68,12 @@ Download Docker Compose: (https://docs.docker.com/compose/install/)
 
 1. Create bootstrap script which installs Docker-CE and Docker compose
 2. Install Wordpress (https://docs.docker.com/compose/wordpress/)
+
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo docker-compose --version
+
+wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Excercise%203/Docker%20Compose/docker-compose.yaml
+sudo docker-compose up -d
+```
