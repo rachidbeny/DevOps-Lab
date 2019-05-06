@@ -8,7 +8,7 @@ Download Vagrant: (https://www.vagrantup.com/downloads.html)
 Vagrant images: (https://app.vagrantup.com/boxes/search)
 
 1. Download Vagrant box ```vagrant box add ubuntu/xenial64```
-2. Select workdir ```cd XXX```
+2. Select workdir (create workdir to your computer first) ```cd XXX```
 3. Initialize vagrantfile ```vagrant init ubuntu/xenial64```
 4. Start server ```vagrant up```
 5. Connect to server ```vagrant ssh```
