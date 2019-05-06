@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.hostname = "Example3"
-end`
+end
 ```
 
 ### Docker installation
@@ -66,5 +66,5 @@ sudo docker run -d -p 80:5000 testwebapp
 ### Example: Wordpress microservice
 Download Docker Compose: (https://docs.docker.com/compose/install/)
 
-1. Create bootsrap script which installs Docker-CE and Docker compose
+1. Create bootstrap script which installs Docker-CE and Docker compose
 2. Install Wordpress (https://docs.docker.com/compose/wordpress/)

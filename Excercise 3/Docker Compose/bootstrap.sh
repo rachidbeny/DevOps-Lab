@@ -22,5 +22,5 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-c
 sudo chmod +x /usr/local/bin/docker-compose
 sudo docker-compose --version
 
-wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Harjoitus%203/Docker%20Compose/docker-compose.yaml
+wget https://raw.githubusercontent.com/PT-Jaloit/DevOps-Lab/master/Excercise%203/Docker%20Compose/docker-compose.yaml
 sudo docker-compose up -d
