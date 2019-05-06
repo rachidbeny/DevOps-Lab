@@ -1,58 +1,61 @@
-# Harjoitus 3 - Kontainerit ja testausympäristöt
-## Esivalmistelut
-Lataa Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
+# Example 3 - Container and development environments
+## Pre tasks
+Download Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
+Download Vagrant: (https://www.vagrantup.com/downloads.html)
 
-Lataa Vagrant: (https://www.vagrantup.com/downloads.html)
+### Vagrant usage
+Vagrant images: (https://app.vagrantup.com/boxes/search)
 
-### Vagrant käyttö
-Vagrant imaget: (https://app.vagrantup.com/boxes/search)
+1. Download Vagrant box ```vagrant box add ubuntu/xenial64```
+2. Select workdir ```cd XXX```
+3. Initialize vagrantfile ```vagrant init ubuntu/xenial64```
+4. Start server ```vagrant up```
+5. Connect to server ```vagrant ssh```
+6. Destroy server ```vagrant destroy```
 
-1. Lataa Vagrant levykuva ```vagrant box add ubuntu/xenial64```
-2. Avaa työkansio ```cd XXX```
-3. Alusta vagrant ```vagrant init ubuntu/xenial64```
-4. Käynnistä vagrant palvelin ```vagrant up```
-5. Yhdistä palvelimeen ```vagrant ssh```
-6. Tuhoa palvelin ```vagrant destroy```
+### Vagrant settings
 
-### Vagrant asetukset
+Vagrant network settings: (https://www.vagrantup.com/docs/networking/)
 
-Vagrant verkkoasetukset: (https://www.vagrantup.com/docs/networking/)
-
-Bootstrap scripti: (https://www.vagrantup.com/docs/provisioning/file.html)
+Bootstrap script: (https://www.vagrantup.com/docs/provisioning/file.html)
 
 Hostname: (https://www.vagrantup.com/docs/vagrantfile/machine_settings.html)
 
-1. Muuta Vagrantfileä siten että käynnistyessään suorittaa bootstrapin ja ohjaa portin 80 isännän 8080 porttiin. Lisäksi anna nimeksi Harjoitus3.
+1. Change Vagrantfile, that on startup vagrant runs bootstrap script and forward network por 80 to host 8080 port. Give name Example3.
 
-### Docker asennus
+### Docker installation
 Docker: (https://docs.docker.com/install/)
 
-1. Asenna Docker Vagranttiin
-2. Suorita Hello World
+1. Install Docker to Vagrant
+2. Run Hello World
 
-### Luo uusi kontainer web palvelu
+* Every command you execute, keep them in notepad etc. *
+
+### Create new container service
 
 (https://github.com/docker-training/webapp)
 
-1. Tee bootstrap skripti joka kloonaa GitHub Repositoryn ja luo docker imagen Dockerfilestä.
-2. Käynnistä kontaineri
+1. Clone Github repository
+2. Create docker image from Dockerfile
+3. Start Container
+4. Create bootstrap script that install all automatically
 
 ```bash
-# Asenna GIT
+# Install GIT
 sudo apt-get -y install git
 
-# Git repositoryn kloonaus
+# Clone Git repository
 sudo git clone https://github.com/docker-training/webapp.git
 
-# Docker imagen koonti Dockerfilestä
+# Create docker image from Dockerfile
 sudo docker build -t testwebapp .
 
-# Docker imagen käynnistys
+# Start Container
 sudo docker run -d -p 80:5000 testwebapp
 ```
 
-### Esimerkki Wordpress microservice
-Lataa Docker Compose: (https://docs.docker.com/compose/install/)
+### Example: Wordpress microservice
+Download Docker Compose: (https://docs.docker.com/compose/install/)
 
-1. Luo bootstrap file joka asentaa Docker-CE:n ja Docker Composen.
-2. Asenna wordpress (https://docs.docker.com/compose/wordpress/)
+1. Create bootsrap script which installs Docker-CE and Docker compose
+2. Install Wordpress (https://docs.docker.com/compose/wordpress/)
