@@ -1,4 +1,4 @@
-# Example 3 - Container and development environments
+# Example 3 - Containers and development environments
 ## Pre tasks
 Download Virtualbox: (https://www.virtualbox.org/wiki/Downloads)
 
@@ -14,7 +14,7 @@ Vagrant images: (https://app.vagrantup.com/boxes/search)
 5. Connect to server ```vagrant ssh```
 6. Destroy server ```vagrant destroy```
 
-### Vagrant settings
+### Vagrant settings (read)
 
 Vagrant network settings: (https://www.vagrantup.com/docs/networking/)
 
