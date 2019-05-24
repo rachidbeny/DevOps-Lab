@@ -4,38 +4,56 @@ pipeline {
       pollSCM('* * * * *')
   }
   stages {
-    stage('Stop previous Docker container') {
+    stage('Run tests') {
+        agent {
+          docker {
+            image 'node:8-alpine'
+            args '-p 3000:3000'
+          }
+
+        }
+        stages {
+          stage('Build') {
+            steps {
+              sh 'npm install'
+            }
+          }
+          stage('Test') {
+            steps {
+              sh 'npm test'
+            }
+          }
+        }
+      }
+
+      stage('Deploy app to development') {
+          when {
+              branch 'Development'
+          }
+          agent any 
+          steps {
+              sh 'echo hello'
+          }
+      }
+
+    stage('Deploy app to production') {
+        when {
+            branch 'master'
+        }
         agent any 
         steps {
-            sh 'docker exec -i Docker_example pkill node || true && docker stop Docker_example || true && docker rm Docker_example || true'
+            sh '''
+            curl -o /tmp/google-cloud-sdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-247.0.0-linux-x86_64.tar.gz;
+					  tar -xvf /tmp/google-cloud-sdk.tar.gz -C /tmp/;
+					  /tmp/google-cloud-sdk/install.sh -q;
+            source /tmp/google-cloud-sdk/path.bash.inc;
+            
+					  gcloud config set project ${GOOGLE_PROJECT_ID};
+            gcloud auth activate-service-account --key-file ${GOOGLE_SERVICE_ACCOUNT_KEY};
+            gcloud config list;
+            gcloud app deploy --version=v01;
+            '''
         }
-    }
-
-  stage('Run app in Docker container') {
-      agent {
-        docker {
-          image 'node:8-alpine'
-          args '-p 3000:3000 --name Docker_example'
-        }
-
-      }
-      stages {
-        stage('Build') {
-          steps {
-            sh 'npm install'
-          }
-        }
-        stage('Test') {
-          steps {
-            sh 'npm test'
-          }
-        }
-        stage('Delivery') {
-          steps {
-            sh 'npm start'
-          }
-        }
-      }
     }
   }
 }
