@@ -1,5 +1,5 @@
 # Excercise 1 - Version Control Systems
-## Pre Tasks
+## Pre-tasks
 Join GitHub: (https://github.com/join)
 
 ![Capture](/Excercise%201/Screencapture/JoinGithub.png?raw=true)
