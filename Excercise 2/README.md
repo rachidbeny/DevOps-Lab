@@ -1,5 +1,5 @@
 # Excercise 2 - Continuous Integration with Jenkins
-## Pre tasks
+## Pre-tasks
 1. Download and install VirtualBox (https://www.virtualbox.org/wiki/Downloads)
 2. Download and install Vagrant (https://www.vagrantup.com/downloads.html)
 
